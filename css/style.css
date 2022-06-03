@@ -1,0 +1,1097 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #0D1A3A;
+    background: #07071B;
+    line-height: 32px;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3a3a3a;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999999;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cacaca;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header__inner {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__item {
+    margin-right: 60px;
+    position: relative;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+.nav__item::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #FFFFFF;
+    transition: .3s;
+}
+
+.nav__item:hover::after {
+    width: 100%;
+}
+
+.nav__btn {
+    padding: 8px 25px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 190%;
+    text-decoration: none;
+    
+    border-radius: 10px;
+    border: solid 1.5px #FFFFFF;
+    color: #FFFFFF;
+    transition: 0.5s ease;
+}
+
+.nav__btn:hover {
+    color: #07071B;
+    background: #FFFFFF;
+    transition: 0.5s ease;
+}
+
+/* Intro */
+
+.intro {
+    width: 100%;
+    height: 880px;
+    margin-top: -85px;
+
+    background: url(../img/bk.png);
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 230px;
+}
+
+.uptitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 190%;
+
+    color: #9999FF;
+}
+
+.title {
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 140%;
+
+    color: #FFFFFF;
+}
+
+.intro__text {
+    display: block;
+}
+
+.subtitle {
+    width: 404px;
+    margin-top: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 190%;
+
+    color: #FFFFFF;
+}
+
+.btn__binance {
+    padding: 15px 35px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 190%;
+    text-decoration: none;
+
+    border-radius: 10px;
+    background: rgba(112, 112, 112, 0.25);
+    color: #FFFFFF;
+    transition: 0.5s ease;
+}
+.btn__binance:hover {
+    background: #FFFFFF;
+    color: #07071B;
+}
+
+.btns {
+    margin-top: 35px;
+}
+
+.intro__nft {
+    margin-top: -70px;
+}
+
+.intro__nft {
+    display: block;
+}
+
+.intro__nft__inner {
+    height: 540px;
+    left: 1147px;
+    top: 172px;
+
+    background: rgb(86 127 166 / 0%);
+    backdrop-filter: blur(111px);
+
+    border-radius: 25px;
+}
+
+.nft-main {
+    width: 421px;
+    height: 540px;
+
+    background: url(../img/nft-main.png);
+}
+
+.nft-group {
+    padding-top: 435px;
+}
+
+.nft-main__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-main__title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+
+.nft-main__about {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 190%;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.main__inner__right {
+    padding-top: 505px; 
+}
+
+.nft-main__title.right {
+    text-align: right;
+}
+
+@keyframes circle {
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+.circle {
+    margin-top: -50px;
+    margin-right: -75px;
+    width: 137px;
+    height: 137px;
+
+    transform-origin: 50% 50%;
+    animation: circle 6s infinite alternate ease-in-out;
+
+    background: url(../img/circle.svg);
+}
+
+/* About */
+
+.about {
+    margin-top: -100px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__inner__item:last-child {
+    margin-top: 170px;
+}
+
+.about__title {
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 190%;
+
+    color: #FFFFFF;
+}
+
+.about__inner__item__right {
+    width: 556px;
+
+    background: rgba(112, 112, 112, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+}
+
+.about__blur {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 555px;
+    z-index: -10;
+}
+
+.link__div {
+    display: flex;
+    align-items: center;
+}
+
+.about__text {
+    padding: 26px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 190%;
+
+    color: #FFFFFF;
+}
+
+.about__btn {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 190%;
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    transition: .5s;
+}
+
+.link__div__text {
+    white-space: nowrap;
+    transition: .5s;
+}
+
+.link__div__text:hover {
+    margin-right: 5px;
+
+    transition: .5s;
+}
+
+.arrow {
+    display: block;
+    margin-left: 10px;
+}
+
+/* Slider */
+
+.images {
+    margin-top: 70px;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide, .swiper-container {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Roadmap */
+
+.roadmap {
+    margin-top: 90px;
+    height: 1690px;
+    
+    background: url(../img/roadmap-bk.png);
+    background-position: center center;
+}
+
+.roadmap__title {
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 190%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.roadmap__rec, .roadmap__rec-1, .roadmap__rec-2 {
+    width: 10px;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: #FFFFFF;
+}
+
+.roadmap__rec {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.roadmap__rec-2 {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.roadmap__item-1, .roadmap__item-2, .roadmap__item-3, .roadmap__item-4, .roadmap__item-5 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: rgba(89, 89, 89, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.roadmap__item-2, .roadmap__item-4 {
+    width: 60%;
+}
+
+.roadmap__item-3 {
+    width: 50%;
+}
+
+.roadmap__item__inner {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.roadmap__text__date {
+    padding-top: 25px;
+    margin-bottom: 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+
+    color: #C6C6C6;
+}
+
+.roadmap__text__title {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.roadmap__text__subtitle {
+    padding-bottom: 25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 190%;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.roadmap__text__subtitle.april {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: -150px;
+    margin-bottom: 70px;
+}
+
+.footer__inner {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.footer__logo {
+    margin-bottom: 10px;
+}
+
+.intro__nft-adaptive {
+    display: none;
+}
+
+.intro {
+    background-position: center center;
+}
+
+.social__media {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.social__media__item {
+    margin-left: 20px;
+
+    opacity: 0.8;
+    transition: 0.8s;
+}
+
+.social__media__item:first-child {
+    margin-left: 0;
+}
+
+.social__media__item:hover {
+    opacity: 1;
+}
+
+.nft-main {
+    border-radius: 15px;
+}
+
+.intro__blur {
+    display: none;
+}
+
+@media (max-width: 1270px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    .intro__blur {
+        display: block;
+        margin-left: 200px;
+        margin-top: -150px;
+
+        z-index: -10;
+    }    
+
+    .intro__nft {
+        z-index: 10;
+    }
+
+    .intro {
+        height: 830px;
+    }
+
+    .circle {
+        z-index: 20;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+    
+    .intro {
+        background: none;
+    }
+
+    .about {
+        margin-top: -50px;
+    }
+
+    .about__blur {
+        margin-top: 20px;
+        margin-left: 340px;
+    }
+
+    .subtitle {
+        width: 375px;
+    }
+
+    .about__title {
+        font-size: 30px;
+    }
+
+    .about__inner__item:first-child {
+        margin-right: 20px;
+    }
+
+    .about__inner__item:last-child {
+        margin-top: 10px;
+    }
+
+    .about__img {
+        height: 400px;
+    }
+
+    .intro__blur {
+        position: absolute;
+    }
+
+    .roadmap__text__title.april {
+        width: 270px;
+    }
+
+    .roadmap {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .container {
+        max-width: 728px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .subtitle {
+        width: 300px;
+    }
+
+    .nft-main {
+        width: 344px;
+        height: 530px;
+
+        border-radius: 15px;
+
+        background-size:100%;
+        background-repeat:no-repeat;
+        background-position:center center;
+    }
+
+    .nft-group {
+        padding-top: 350px;
+    }
+
+    .main__inner__right {
+        padding-top: 420px;  
+    }
+
+    .intro__nft__inner {
+        height: 0;
+    }
+
+    .about__img {
+        display: none;
+    }
+
+    .roadmap {
+        height: 1690px;
+    }
+
+    .about__inner {
+        justify-content: center;
+    }
+
+    .about__title {
+        text-align: center;
+    }
+
+    .about__inner__item__right {
+        width: 100%;
+    }
+
+    .about__blur {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .about__btn {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about__inner__item:first-child {
+        margin-right: 0;
+    }
+
+    .about {
+        margin-bottom: 60px;
+    }
+
+    .images {
+        margin-top: 40px;
+    }
+
+    .roadmap {
+        margin-top: 40px;
+    }
+
+    .roadmap__item-1, .roadmap__item-5 {
+        width: 90%;
+    }
+
+    .roadmap__item-2, .roadmap__item-4 {
+        width: 80%;
+    }
+
+    .roadmap__item-3 {
+        width: 70%;
+    }
+
+    .roadmap__text__subtitle {
+        margin-left: auto;
+        margin-right: auto;
+        width: 485px;
+    }
+    
+    .footer {
+        margin-top: -70px;
+    }
+
+    .about__text {
+        text-align: center;
+    }
+
+    .intro__blur {
+        margin-left: 50px;
+        margin-top: -140px;
+
+        z-index: -10;
+    }
+
+    .intro {
+        height: 750px;
+        margin-top: -130px;
+    }
+
+    .roadmap {
+        height: 1600px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 440px;
+    }
+    
+    .nav__item {
+        display: none;
+    }
+
+    .nav__btn {
+        font-size: 14px;
+    }
+
+    .intro__inner {
+        display: block;
+    }
+
+    .intro__nft {
+        display: none;
+    }
+
+    .intro__nft-adaptive {
+        display: block;
+    }
+
+    .about {
+        margin-top: 40px;
+    }
+
+    .intro__nft__inner {
+        margin-top: 95px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .intro__inner {
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;  
+        display: block;
+    }
+
+    .nft-main {
+        width: 380px;
+        height: 420px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .nft-main {
+        width: 442px;
+        height: 545px;
+    }
+
+    .intro__nft__inner {
+        width: 320px;
+        height: 416px;
+        display: block;
+    }
+
+    .nft-group {
+        display: none;
+    }
+
+    .main__inner__left {
+        padding-top: 418px;
+    }
+
+    .uptitle, .title, .subtitle {
+        text-align: center;
+    }
+
+    .subtitle {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .subtitle, .uptitle {
+        font-size: 14px;
+    }
+
+    .main__inner__right, .main__inner__left {
+        padding-top: 370px;
+    }
+
+    .intro__text {
+        margin-top: 50px;
+    }
+
+    .intro {
+        margin-bottom: 20px;
+    }
+
+    .btns {
+        margin-top: 25px;
+    }
+
+    .btn__binance {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+
+        font-size: 15px;
+    }
+
+    .about__title {
+        font-size: 26px;
+    }
+
+    .about__text {
+        padding: 15px;
+
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .roadmap__title {
+        font-size: 26px;
+    }
+
+    .btn__binance {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .title {
+        display: block;
+
+        z-index: 100;
+    }
+
+    .intro {
+        height: auto;
+
+        z-index: 100;
+    }
+
+    .roadmap__text__date {
+        font-size: 14px;
+    }
+
+    .roadmap__text__title {
+        font-size: 14px;
+    }
+
+    .roadmap__text__subtitle {
+        width: 370px;
+
+        font-size: 14px;
+    }
+
+    .roadmap__item-1, .roadmap__item-2, .roadmap__item-3, .roadmap__item-4, .roadmap__item-5 {
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .footer__inner {
+        width: 200px;
+
+        font-size: 15px;
+    }
+
+    .social__media {
+        justify-content: center;
+    }
+
+    .nft-main {
+        width: 100%;
+
+        border-radius: 20px;
+    }
+
+    .intro__nft__inner {
+        width: 100%;
+    }
+
+    .intro__text {
+        margin-top: 100px;
+    }
+
+    .intro__blur {
+        margin-top: -710px;
+        margin-left: -90px;
+    }
+
+    .link__div__text {
+        font-size: 16px;
+    }
+
+    .intro__nft__inner {
+        height: 0;
+        width: 0;
+
+        background: none;
+    }
+
+    .about {
+        margin-bottom: 40px;
+    }
+
+    .images {
+        margin-top: 0;
+    }
+
+    .swiper-slide, .swiper-container {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .roadmap {
+        height: auto;
+
+        background: none;
+    }
+
+    .intro__blur {
+        width: 340px;
+        height: 860px;
+        margin-top: -660px;
+        margin-left: 45px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        max-width: 320px;
+    }
+
+    .nav__btn {
+        display: none;
+    }
+
+    .header__inner {
+        justify-content: center;
+    }
+
+    .intro__blur {
+        margin-left: -10px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .btn__binance {
+        width: 65%;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        width: 270px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .roadmap {
+        height: auto;
+
+        background: none;
+    }
+
+    .roadmap__title {
+        margin-bottom: 15px;
+    }
+
+    .roadmap__text__title {
+        width: 230px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .roadmap__text__subtitle {
+        width: 265px;
+    }
+    
+    .footer {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about__blur {
+        margin-top: 130px;
+    }
+    
+    .intro {
+        margin-top: -190px;
+        margin-bottom: 80px;
+    }
+
+    .intro__blur {
+        height: 780px;
+        margin-top: -600px;
+    }
+
+    .about__blur {
+        display: none;
+    }
+
+    .roadmap__text__subtitle.april {
+        width: 265px;
+    }
+
+    .footer {
+        margin-top: 35px;
+    }
+}
